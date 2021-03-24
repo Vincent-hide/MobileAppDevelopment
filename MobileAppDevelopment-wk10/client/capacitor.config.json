@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "MobileAppDevelopment-wk10",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

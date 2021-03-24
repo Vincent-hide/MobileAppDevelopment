@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Ionic Note App </ion-title>
+  </ion-toolbar>
+  <ion-button href="/add-note">Add a new note</ion-button>
+</ion-header>
+
+<ion-list class="ios list-ios hydrated">
+  <ion-list-header class="ios hydrated"> Note List </ion-list-header>
+  <ion-item
+   *ngFor="let note of Notes"
+   class="item-label item ios in-list ion-focusable hydrated"
+   >
+   {{log(note.note)}}
+    <ion-label class="sc-ion-label-ios-h sc-ion-label-ios-s ios hydrated">
+      <h2 style="color: white;">{{note.note}}</h2>
+    </ion-label>
+
+    <!-- <div class="item-note" item-end>
+      <button ion-button clear [routerLink]="['/edit-note/', note._id]">
+        <ion-icon name="create" style="zoom: 2"></ion-icon>
+      </button>
+      <button ion-button clear (click)="deleteNote(note, i)">
+        <ion-icon name="trash" style="zoom: 2"></ion-icon>
+      </button>
+    </div> -->
+  </ion-item>
+</ion-list>
